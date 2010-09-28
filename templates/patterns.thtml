@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      
+      font-size: 7px;
+    }
+    
+    div {
+      font-size: 10px;
+    }
+    
+    .pattern-name {
+      font-size: 2em;
+    }
+    
+    .pattern-category:before {
+      content: "Type: ";
+      font-weight: bold;
+    }
+    
+    .pattern-description:before {
+      content: "What it is:";
+      font-weight: bold;
+      display: block;
+    }
+    
+    .pattern-category, .pattern-description {
+      margin-top: 1em;
+    }
+    
+    .panel {
+      border: 1px dashed black;
+      margin: 1em;
+      padding: 5px;
+      
+      width: 470px;
+      height: 310px;
+    }
+    
+    .pattern-text {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 180px;
+    }
+    
+    .pattern-diagram {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    
+    .pattern-wrapper {
+      position: relative;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      
+      line-height: 1em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    .pattern {
+      line-height: 310px;
+    }
+
+  </style>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>
+    function vertically_center_pattern_with_image(image) {
+      wrapper = image.parent().parent();
+      wrapper.children().each(function(index, child) {
+        height = wrapper.height();
+        wrapper.height(Math.max(height, $(child).height()));
+      });
+    }
+    
+    function scale_images() {
+      scale_factor = 1.33;
+      $("img").load(function(evt) {
+        $(this).width(function(index, width) {
+          return width*scale_factor;
+        });
+        // The height should automatically adjust to the width.
+        
+        vertically_center_pattern_with_image($(this));
+      });
+    }
+    
+    $(document).ready(function() {
+      scale_images();
+    });
+  </script>
+</head>
+
+<body>
+  <div id="splash-panel" class="splash panel">
+    <h1>Gang of Four Design Patterns</h1>
+    <div>Content from <a href="http://www.mcdonaldland.info/2007/11/28/40/">Jason McDonald</a> and <a href="http://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional/dp/0201633612/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1196286871&sr=8-1">The Gang of Four</a>.</div>
+  </div>
+  
+  <div id="settings-panel" class="settings panel">
+    <h1>Settings</h1>
+    <div class="settings-field">
+      <input type="checkbox" id="show-B" /><label for="show-B">Show Behavioral Patterns</label>
+    </div>
+    <div class="settings-field">
+      <input type="checkbox" id="show-C" /><label for="show-C">Show Creational Patterns</label>
+    </div>
+    <div class="settings-field">
+      <input type="checkbox" id="show-S" /><label for="show-S">Show Structural Patterns</label>
+    </div>
+  </div>
+  
+  {% for pattern in patterns %}
+  <div class="pattern panel">
+    <div class="pattern-wrapper">
+      <div class="pattern-text">
+        <div class="pattern-name">{{ pattern.name }}</div>
+        <div class="pattern-category">{{ pattern.category.name }}</div>
+        <div class="pattern-description">{{ pattern.description }}</div>
+      </div>
+      <div class="pattern-diagram"">
+        <img src="{{ pattern.stem }}.svg"/>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</body>
+</html>
