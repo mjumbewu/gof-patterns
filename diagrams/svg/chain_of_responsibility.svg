@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="209.56772"
+   height="115.9"
+   id="svg14831">
+  <defs
+     id="defs14833" />
+  <g
+     transform="translate(-460.83959,-431.29299)"
+     id="layer1">
+    <path
+       d="m 549.33959,468.04299 67.5,0 0,-15.75 -67.5,0 0,15.75 z"
+       id="path3888"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ccff99;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 549.33959,468.04299 67.5,0 0,-15.75 -67.5,0 0,15.75 z"
+       id="path3890"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="550.92969"
+       y="459.79205"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3894"
+       style="font-size:7.5px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial Italic">
+      <tspan
+         x="550.92969 555.4342 559.48706 563.69 567.89301 572.09601 573.74634 577.94934 583.35333 587.55634 591.60919 595.81213 600.01508 603.7688 605.87207 608.42822"
+         y="459.79205"
+         id="tspan3896"
+         style="font-size:7.5px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">+handleRequest()</tspan>
+    </text>
+    <path
+       d="m 549.33959,452.29299 67.5,0 0,-20.55 -67.5,0 0,20.55 z"
+       id="path3898"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ccff99;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 549.33959,452.29299 67.5,0 0,-20.55 -67.5,0 0,20.55 z"
+       id="path3900"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="564.89398"
+       y="439.26221"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3904"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">
+      <tspan
+         x="564.89398 569.09698 570.74731 574.95032 577.05365 581.25659 583.65887 585.76221 589.96521 593.71887 597.92181"
+         y="439.26221"
+         id="tspan3906"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">«interface»</tspan>
+    </text>
+    <text
+       x="569.54852"
+       y="448.25339"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3908"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial Bold">
+      <tspan
+         x="569.54852 574.95258 579.15558 583.66119 588.31696 590.42029 594.62323"
+         y="448.25339"
+         id="tspan3910"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Handler</tspan>
+    </text>
+    <path
+       d="m 508.68959,545.74299 70.05,0 0,-15.75 -70.05,0 0,15.75 z"
+       id="path3912"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ccff99;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 508.68959,545.74299 70.05,0 0,-15.75 -70.05,0 0,15.75 z"
+       id="path3914"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="510.38995"
+       y="537.41583"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3918"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">
+      <tspan
+         x="510.38995 514.74432 518.94733 523.00012 527.20312 531.40613 533.05646 537.25946 542.66351 546.86646 551.06946 555.12225 559.32526 563.07892 565.18225 567.73468"
+         y="537.41583"
+         id="tspan3920"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">+handleRequest()</tspan>
+    </text>
+    <path
+       d="m 508.68959,529.99299 70.05,0 0,-18 -70.05,0 0,18 z"
+       id="path3922"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ccff99;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 508.68959,529.99299 70.05,0 0,-18 -70.05,0 0,18 z"
+       id="path3924"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="511.89142"
+       y="522.73029"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3928"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial Bold">
+      <tspan
+         x="511.89142 517.29547 521.80109 526.45685 530.65979 533.51141 537.71442 540.26685 544.3197 549.72369 553.9267 558.58246 563.08807 565.19141 569.39441 572.39612"
+         y="522.73029"
+         id="tspan3930"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">ConcreteHandler1</tspan>
+    </text>
+    <path
+       d="m 583.08959,479.29299 0,14.7 40.6506,0 0,18"
+       id="path3932"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 576.03959,479.29299 13.9506,0 -6.9006,-11.25 -7.05,11.25"
+       id="path3934"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 576.03959,479.29299 13.9506,0 -6.9006,-11.25 -7.05,11.25 z"
+       id="path3936"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 583.08959,479.29299 0,14.7 -39.45,0 0,18"
+       id="path3938"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 576.03959,479.29299 13.9506,0 -6.9006,-11.25 -7.05,11.25"
+       id="path3940"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 576.03959,479.29299 13.9506,0 -6.9006,-11.25 -7.05,11.25 z"
+       id="path3942"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 588.64019,545.74299 70.2,0 0,-15.75 -70.2,0 0,15.75 z"
+       id="path3944"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ccff99;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 588.64019,545.74299 70.2,0 0,-15.75 -70.2,0 0,15.75 z"
+       id="path3946"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="590.41901"
+       y="537.41583"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3950"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">
+      <tspan
+         x="590.41901 594.92352 598.97638 603.17932 607.38232 611.58527 613.2356 617.4386 622.84265 627.04559 631.09845 635.30139 639.50439 643.25806 645.36133 647.91382"
+         y="537.41583"
+         id="tspan3952"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">+handleRequest()</tspan>
+    </text>
+    <path
+       d="m 588.64019,529.99299 70.2,0 0,-18 -70.2,0 0,18 z"
+       id="path3954"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ccff99;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 588.64019,529.99299 70.2,0 0,-18 -70.2,0 0,18 z"
+       id="path3956"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="591.92047"
+       y="522.73029"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3960"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial Bold">
+      <tspan
+         x="591.92047 597.47467 601.98029 606.63605 610.68884 613.69055 617.89355 620.29584 624.49884 629.90283 634.10583 638.7616 643.26721 645.37048 649.57349 652.42505"
+         y="522.73029"
+         id="tspan3962"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">ConcreteHandler2</tspan>
+    </text>
+    <path
+       d="m 461.28959,458.74299 67.5,0 0,-18 -67.5,0 0,18 z"
+       id="path3964"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ccff99;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 461.28959,458.74299 67.5,0 0,-18 -67.5,0 0,18 z"
+       id="path3966"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="485.16522"
+       y="451.55014"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3970"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial Bold">
+      <tspan
+         x="485.16522 490.56927 492.67258 494.62576 498.82874 503.4845"
+         y="451.55014"
+         id="tspan3972"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Client</tspan>
+    </text>
+    <path
+       d="m 546.33959,449.89299 -7.8,0 0,-0.15 -9.75,0"
+       id="path3974"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 545.58959,446.14299 3.75,3.75 -3.75,3.75 0,-7.5"
+       id="path3976"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 616.84019,458.89299 35.55,0 0,-18.15 -32.55,0"
+       id="path3978"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 620.59019,444.49299 -3.75,-3.75 3.75,-3.75 0,7.5"
+       id="path3980"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="635.91357"
+       y="437.91351"
+       transform="scale(0.99901956,1.0009814)"
+       id="text3984"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">
+      <tspan
+         x="635.91357 639.66724 643.87024 647.6239 651.37756 655.58057 659.33423 663.08789 667.29083"
+         y="437.91351"
+         id="tspan3986"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">successor</tspan>
+    </text>
+  </g>
+</svg>

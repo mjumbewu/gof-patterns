@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="80.949997"
+   height="60.849998"
+   id="svg14831">
+  <defs
+     id="defs14833" />
+  <g
+     transform="translate(-403.42612,-412.05141)"
+     id="layer1">
+    <path
+       d="m 403.87612,471.45141 79.05,0 0,-20.55 -79.05,0 0,20.55 z"
+       id="path17575"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#99ccff;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 403.87612,471.45141 79.05,0 0,-20.55 -79.05,0 0,20.55 z"
+       id="path17577"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="405.47339"
+       y="458.40152"
+       transform="scale(0.99901956,1.0009814)"
+       id="text17581"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">
+      <tspan
+         x="405.47339 409.82776 413.58148 415.68481 419.88776 421.84094 423.64148 427.39514 429.34833 431.14886 435.20172 438.95538 441.05872 445.26172 449.46472 453.21838 457.42139 459.82373"
+         y="458.40152"
+         id="tspan17583"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">+static instance()</tspan>
+      <tspan
+         x="405.47339 409.82776 414.78271 416.43304 420.63605 424.83905 426.48944 430.69244 432.79578 436.99878 441.05164 446.90863 451.11163 455.31464 457.71692 461.91992 464.02325 465.67371 469.87665 474.07971 476.63214"
+         y="467.39267"
+         id="tspan17585"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">+SingletonOperation()</tspan>
+    </text>
+    <path
+       d="m 403.87612,450.90141 79.05,0 0,-20.4 -79.05,0 0,20.4 z"
+       id="path17587"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#99ccff;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 403.87612,450.90141 79.05,0 0,-20.4 -79.05,0 0,20.4 z"
+       id="path17589"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="405.47339"
+       y="437.87167"
+       transform="scale(0.99901956,1.0009814)"
+       id="text17593"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial">
+      <tspan
+         x="405.47339 407.87573 411.62939 413.73273 417.93573 420.03906 421.68945 425.44312 427.54645 431.74945 435.80231 437.60284 441.6557 445.8587 450.06171 452.16504 456.36804 460.1217 462.22504 466.27789 470.4809 474.23456"
+         y="437.87167"
+         id="tspan17595"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">-static uniqueInstance</tspan>
+      <tspan
+         x="405.47339 407.87573 411.62939 413.27979 417.48273 421.68573 423.33612 427.53912 429.64246 433.84546 437.89832 443.45251 447.50537 449.6087"
+         y="446.86282"
+         id="tspan17597"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">-singletonData</tspan>
+    </text>
+    <path
+       d="m 403.87612,430.50141 79.05,0 0,-18 -79.05,0 0,18 z"
+       id="path17599"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#99ccff;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <path
+       d="m 403.87612,430.50141 79.05,0 0,-18 -79.05,0 0,18 z"
+       id="path17601"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial" />
+    <text
+       x="426.64417"
+       y="423.18607"
+       transform="scale(0.99901956,1.0009814)"
+       id="text17605"
+       style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial Bold">
+      <tspan
+         x="426.64417 431.74921 433.70239 438.35822 442.86383 444.96716 449.17017 451.72266 456.22827"
+         y="423.18607"
+         id="tspan17607"
+         style="font-size:7.5px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Singleton</tspan>
+    </text>
+  </g>
+</svg>
