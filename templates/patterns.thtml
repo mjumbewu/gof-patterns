@@ -134,7 +134,6 @@
       if (!flowing) { // ...some primitive synchronization
         flowing = true;
         orientation = jQT.getOrientation()
-        alert(orientation)
         
         if (orientation == 'landscape' ||
             orientation == 90 ||
