@@ -26,6 +26,19 @@
       display: none;
     }
     
+    .pattern-info {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    
+    .pattern-category {
+      padding-top: 15px;
+    }
+    
+    .pattern-description {
+      padding-bottom: 15px;
+    }
+    
     .pattern-category:before {
       content: "Type: ";
       font-weight: bold;
@@ -59,6 +72,7 @@
     
     .pattern-diagram .diagram {
       display: inline;
+      margin-top: 1em;
     }
     
     .pattern-wrapper {
@@ -80,6 +94,14 @@
     
     .block {
       display: block;
+    }
+    
+    .noborder {
+      border: 0px;
+    }
+
+    .fullheight {
+      height: 100%;
     }
 
   </style>
@@ -118,27 +140,37 @@
             orientation == -90) {
           h = window.innerHeight - 45//$('.toolbar').height();
           
-          $('.pattern-text').css('width','33%');
+          $('.pattern-text').css({
+            'width': '33%',
+            'height': '100%'});
           
           $(".pattern-wrapper").css({
             'height': h+'px',
             'line-height': h+'px'});
           
           $(".pattern-diagram").css({
-            'margin-top': 'auto',
             'width':'63%'});
+          
+          $(".pattern-info").addClass("fullheight noborder")
         }
         
         else { // 'profile' or 0 or 180(?)
-          $('.pattern-text').css('width','100%');
+          $('.pattern-text').css({
+            'width': '100%',
+            'height': 'auto'});
+          
+          $('.pattern-text').css({
+            'width': '100%',
+            'height': 'auto'});
           
           $(".pattern-wrapper").css({
             'height': 'auto',
             'line-height': 'normal'});
           
           $(".pattern-diagram").css({
-            'margin-top': '1em',
             'width': '100%'});
+          
+          $(".pattern-info").removeClass("fullheight noborder")
         }
         flowing = false;
       }
@@ -342,7 +374,7 @@
     <div class="pattern-wrapper">
       <div class="pattern-text">
         <h2 class="pattern-name">{{ pattern.name }}</h2>
-        <div class="info">
+        <div class="info pattern-info">
           <p class="pattern-category">{{ pattern.category.name }}</p>
           <p class="pattern-description">{{ pattern.description }}</p>
         </div>
