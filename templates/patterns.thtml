@@ -2,6 +2,12 @@
 
 <html>
 <head>
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript"> google.load("jquery", "1.3.2"); </script>
+  <script src="static/jqtouch/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+  <style type="text/css" media="screen">@import "static/jqtouch/jqtouch/jqtouch.min.css";</style>
+  <style type="text/css" media="screen">@import "static/jqtouch/themes/jqt/theme.min.css";</style>  
+  
   <style>
     body {
       margin: 0px;
@@ -14,10 +20,6 @@
       font-size: 10px;
     }
     
-    .pattern-name {
-      font-size: 2em;
-    }
-    
     .pattern-category:before {
       content: "Type: ";
       font-weight: bold;
@@ -26,109 +28,316 @@
     .pattern-description:before {
       content: "What it is:";
       font-weight: bold;
+      margin-top: 1em;
       display: block;
     }
     
     .pattern-category, .pattern-description {
-      margin-top: 1em;
-    }
-    
-    .panel {
-      border: 1px dashed black;
-      margin: 1em;
-      padding: 5px;
-      
-      width: 470px;
-      height: 310px;
+      font-weight: normal;
+      text-align: left;
     }
     
     .pattern-text {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      width: 180px;
+      font-size: 10px;
     }
     
     .pattern-diagram {
-      position: absolute;
-      right: 0px;
-      top: 0px;
+      text-align: center;
+    }
+    
+    .pattern-text, .pattern-diagram {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+    
+    .pattern-diagram .diagram {
+      display: inline;
     }
     
     .pattern-wrapper {
-      position: relative;
-      left: 0px;
-      top: 0px;
       width: 100%;
       
-      line-height: 1em;
+      line-height: normal;
       display: inline-block;
       vertical-align: middle;
     }
     
     .pattern {
-      line-height: 310px;
+      line-height: 100%;
+    }
+    
+    .hidden {
+      display: none;
+      visibility: hidden;
+    }
+    
+    .block {
+      display: block;
     }
 
   </style>
   
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>
-    function vertically_center_pattern_with_image(image) {
-      wrapper = image.parent().parent();
-      wrapper.children().each(function(index, child) {
-        height = wrapper.height();
-        wrapper.height(Math.max(height, $(child).height()));
+    function scale_images() {
+      /* 
+       * The images start out with a 7.5px height font.  That's too small.
+       * Scale the images to whatever the height of the page text is.
+       */
+      scale_factor = 1.33;
+      
+      $(".diagram").each(function(index, diagram) {
+        w = $(diagram).width()
+        $(diagram).width(w*scale_factor);
+        
+        // The height should automatically adjust to the width.
       });
     }
     
-    function scale_images() {
-      scale_factor = 1.33;
-      $("img").load(function(evt) {
-        $(this).width(function(index, width) {
-          return width*scale_factor;
-        });
-        // The height should automatically adjust to the width.
+    flowing = false;
+    function flow_patterns() {
+      if (!flowing) { // ...some primitive synchronization
+        flowing = true;
+        orientation = $.jQTouch().getOrientation()
         
-        vertically_center_pattern_with_image($(this));
+        if (orientation == 'profile') {
+          $('.pattern-text').css('width','100%');
+          
+          $(".pattern-wrapper").css({
+            'height': 'auto',
+            'line-height': 'normal'});
+          
+          $(".pattern-diagram").css({
+            'margin-top': '1em',
+            'width': '100%'});
+        }
+        
+        else {
+          h = window.innerHeight - 45//$('.toolbar').height();
+          
+          $('.pattern-text').css('width','33%');
+          
+          $(".pattern-wrapper").css({
+            'height': h+'px',
+            'line-height': h+'px'});
+          
+          $(".pattern-diagram").css({
+            'margin-top': 'auto',
+            'width':'63%'});
+        }
+        flowing = false;
+      }
+    }
+    
+    function get_pattern_ids() {
+      ids = Array();
+      $(".pattern").each(function(index, pattern) {
+        ids[index] = $(pattern).attr('id');
+      });
+      return ids;
+    }
+    
+    function shuffle(array) {
+      /* Simple, efficient shuffle implementation from 
+       * http://stackoverflow.com/questions/962802/is-it-correct-to-use-javascript-array-sort-method-for-shuffling
+       */
+      var tmp, current, top = array.length;
+
+      if(top) while(--top) {
+          current = Math.floor(Math.random() * (top + 1));
+          tmp = array[current];
+          array[current] = array[top];
+          array[top] = tmp;
+      }
+
+      return array;
+    }
+    
+    function assign_link_random_id(link, ids) {
+      random_id = ids[Math.floor(Math.random() * ids.length)]
+      $(link).attr('href', '#' + random_id);
+    }
+    
+    function assign_link_randomize_tap_handler(link) {
+      $(link).bind('click', function(info) {
+        hook_up_random_pattern_links();
+      });
+    }
+    
+    function assign_link_non_cyclical_id(link, ids, reverse_links) {
+      // choose the first id that doesn't create a cycle...
+      self_id = $(link).parents(".panel").attr('id');
+      for (index in ids) {
+        potential_id = ids[index];
+        console.debug('  to id ' + potential_id + "...");
+        
+        if (self_id == potential_id) {
+          console.debug('  ...created a cycle :(');
+          continue;
+        }
+        
+        creates_cycle = false;
+        reverse_id = self_id;
+        
+        // walk back through the links to check...
+        num_ids = ids.length;
+        if (num_ids > 1) {
+          while (reverse_links[reverse_id]) {
+            check_id = reverse_links[reverse_id];
+            
+            console.debug('  ...for cycle from id ' + check_id);
+            
+            if (potential_id == check_id) {
+              creates_cycle = true;
+              console.debug('  ...created a cycle :(');
+              break;
+            }
+            reverse_id = check_id;
+          }
+        }
+        
+        if (creates_cycle) {
+          // try the next one...
+          continue;
+        }
+        else {
+          success_id = potential_id;
+          
+          console.debug('  ...no cycles!');
+          
+          reverse_links[success_id] = self_id
+          $(link).attr('href', '#' + success_id);
+          ids.splice(index, 1);
+          break;
+        }
+      }
+    }
+    
+    function hook_up_random_pattern_links() {
+      /* Set the links on the Surprise Me! buttons, without creating cycles.
+       * The reverse_links array is a map from ID to ID such that:
+       *
+       *     X links to Y ==> Y->X is in reverse_links
+       *
+       * It keeps track of a path from a path to any id in the given list from
+       * its source.
+       */
+      
+      pattern_ids = get_pattern_ids();
+      shuffled_pattern_ids = shuffle(pattern_ids.slice());
+      
+      reverse_links = Array();
+      
+      $(".random-pattern-link").each(function(index, link) {
+        self_id = $(link).parents(".panel").attr('id');
+        
+        if (pattern_ids.indexOf(self_id) == -1) {
+          assign_link_random_id(link, pattern_ids);
+        }
+        
+        else {
+          console.debug('checking link from id ' + self_id + "(" + index + ")...");
+          assign_link_non_cyclical_id(link, shuffled_pattern_ids, reverse_links);
+        }
+      });
+    }
+    
+    function hook_up_randomize_order_links() {
+      $('.random-pattern-link').each(function(index, link) {
+        if ($(link).parents('.pattern').length == 0)
+          assign_link_randomize_tap_handler(link);
       });
     }
     
     $(document).ready(function() {
+      hook_up_random_pattern_links();
+      hook_up_randomize_order_links();
+    });
+    
+    $(window).load(function(evt) {
+      /* NOTE: We add (and later remove) the 'block' class from all panels so 
+       * that the panels have some dimensions when scaling images and centering
+       * patterns.  jQTouch sets the panels to "display: none" by default, 
+       * rendering their dimensions meaningless.  So, we have to give them some
+       * dimensions ourselves (and later take them away).
+       */
+      $(".panel").addClass('block');
       scale_images();
+      flow_patterns();
+      $('.panel').removeClass('block');
+      
+      $(window).bind('resize', function(data) {
+        $(".panel").addClass('block');
+        flow_patterns();
+        $('.panel').removeClass('block');
+      });
+      
+      $(window).bind('turn', function(data) {
+        $(".panel").addClass('block');
+        flow_patterns();
+        $('.panel').removeClass('block');
+      });
+    });
+    
+    $.jQTouch({
+//        icon: 'jqtouch.png'
     });
   </script>
 </head>
 
 <body>
-  <div id="splash-panel" class="splash panel">
-    <h1>Gang of Four Design Patterns</h1>
-    <div>Content from <a href="http://www.mcdonaldland.info/2007/11/28/40/">Jason McDonald</a> and <a href="http://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional/dp/0201633612/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1196286871&sr=8-1">The Gang of Four</a>.</div>
+  <div id="browse-panel" class="panel">
+    <div class="toolbar">
+      <a class="back" href="#home-panel">Home</a>
+      <h1>Browse Patterns</h1>
+      <a class="button slideup random-pattern-link" href="#">Surprise Me!</a>
+    </div>
+    
+    <ul class="edgetoedge">
+      {% regroup patterns by category as categories %}
+      {% for category in categories %}
+      <li class="sep">{{ category.grouper.name }}</li>
+      {% for pattern in category.list %}
+      <li class="arrow"><a class="slide" href="#{{ pattern.stem }}-pattern-panel">{{ pattern.name }}</a></li>
+      {% endfor %} {# pattern #}
+      {% endfor %} {# category #}
+    </ul>
   </div>
   
-  <div id="settings-panel" class="settings panel">
-    <h1>Settings</h1>
-    <div class="settings-field">
-      <input type="checkbox" id="show-B" /><label for="show-B">Show Behavioral Patterns</label>
+  <div id="home-panel" class="current splash panel">
+    <div class="toolbar">
+      <h1>Design Patterns</h1>
     </div>
-    <div class="settings-field">
-      <input type="checkbox" id="show-C" /><label for="show-C">Show Creational Patterns</label>
-    </div>
-    <div class="settings-field">
-      <input type="checkbox" id="show-S" /><label for="show-S">Show Structural Patterns</label>
-    </div>
+    
+    <h1>Gang of Four Design Patterns</h1>
+    <ul>
+      <li class="arrow"><a class="browse-patterns-link" href="#browse-panel">Browse Patterns</a></li>
+      <li class="arrow"><a class="random-pattern-link" href="#">Surprise Me!</a></li>
+    </ul>
+    
+    <div class="info">Content from <a
+       href="http://www.mcdonaldland.info/2007/11/28/40/">Jason McDonald</a> and
+       <a href="http://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional/dp/0201633612/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1196286871&sr=8-1">The Gang of Four</a>.</div>
   </div>
   
   {% for pattern in patterns %}
-  <div class="pattern panel">
+  <div id="{{ pattern.stem }}-pattern-panel" class="pattern panel forget">
+    <div class="toolbar">
+      <a class="back slide" href="#">Back</a>
+      <h1>{{ pattern.name }} Pattern</h1>
+      <a class="button swap random-pattern-link" href="#">Surprise Me!</a>
+    </div>
+    
     <div class="pattern-wrapper">
       <div class="pattern-text">
-        <div class="pattern-name">{{ pattern.name }}</div>
-        <div class="pattern-category">{{ pattern.category.name }}</div>
-        <div class="pattern-description">{{ pattern.description }}</div>
+        <h2 class="pattern-name">{{ pattern.name }}</h2>
+        <div class="info">
+          <p class="pattern-category">{{ pattern.category.name }}</p>
+          <p class="pattern-description">{{ pattern.description }}</p>
+        </div>
       </div>
-      <div class="pattern-diagram"">
-        <img src="{{ pattern.stem }}.svg"/>
+      <div class="pattern-diagram">
+        <img class="diagram" src="diagrams/svg/{{ pattern.stem }}.svg" />
       </div>
     </div>
   </div>
