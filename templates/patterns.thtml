@@ -282,7 +282,8 @@
     });
     
     $.jQTouch({
-        icon: 'static/icons/escher.png'
+        icon: 'static/icons/escher.png',
+        startupScreen: 'static/startup/escher.png'
     });
   </script>
 </head>
