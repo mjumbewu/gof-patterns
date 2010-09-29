@@ -334,7 +334,7 @@
     <div class="toolbar">
       <a class="back" href="#home-panel">Home</a>
       <h1>Browse Patterns</h1>
-      <a class="button flip random-pattern-link" href="#">Surprise Me!</a>
+      <a class="button slide random-pattern-link" href="#">Surprise Me!</a>
     </div>
     
     <ul class="edgetoedge">
@@ -342,7 +342,7 @@
       {% for category in categories %}
       <li class="sep">{{ category.grouper.name }}</li>
       {% for pattern in category.list %}
-      <li class="arrow"><a class="flip" href="#{{ pattern.stem }}-pattern-panel">{{ pattern.name }}</a></li>
+      <li class="arrow"><a class="slide" href="#{{ pattern.stem }}-pattern-panel">{{ pattern.name }}</a></li>
       {% endfor %} {# pattern #}
       {% endfor %} {# category #}
     </ul>
@@ -355,8 +355,8 @@
     
     <h1>Gang of Four Design Patterns</h1>
     <ul class="rounded">
-      <li class="arrow"><a class="browse-patterns-link slideup" href="#browse-panel">Browse Patterns</a></li>
-      <li class="arrow"><a class="random-pattern-link flip" href="#">Surprise Me!</a></li>
+      <li class="arrow"><a class="browse-patterns-link slide" href="#browse-panel">Browse Patterns</a></li>
+      <li class="arrow"><a class="random-pattern-link slide" href="#">Surprise Me!</a></li>
     </ul>
     
     <div class="info">Content from <a
