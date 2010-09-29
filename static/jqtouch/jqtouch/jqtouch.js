@@ -64,6 +64,7 @@
                 fadeSelector: '.fade',
                 fixedViewport: true,
                 flipSelector: '.flip',
+                forgetSelector: '.forget, .nohistory',
                 formSelector: 'form',
                 fullScreen: true,
                 fullScreenClass: 'fullscreen',
@@ -249,6 +250,11 @@
                 }
             }
             if (animatePages(fromPage, toPage, animation)) {
+                if (fromPage.is(jQTSettings.forgetSelector)) {
+                    // Quietly remove it from the history.
+                    animation = hist[0].animation
+                    hist.splice(0, 1);
+                }
                 addPageToHistory(toPage, animation);
                 return publicObj;
             }
