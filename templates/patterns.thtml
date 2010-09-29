@@ -109,19 +109,9 @@
         flowing = true;
         orientation = jQT.getOrientation()
         
-        if (orientation == 'profile') {
-          $('.pattern-text').css('width','100%');
-          
-          $(".pattern-wrapper").css({
-            'height': 'auto',
-            'line-height': 'normal'});
-          
-          $(".pattern-diagram").css({
-            'margin-top': '1em',
-            'width': '100%'});
-        }
-        
-        else {
+        if (orientation == 'landscape' ||
+            orientation == 90 ||
+            orientation == -90) {
           h = window.innerHeight - 45//$('.toolbar').height();
           
           $('.pattern-text').css('width','33%');
@@ -133,6 +123,18 @@
           $(".pattern-diagram").css({
             'margin-top': 'auto',
             'width':'63%'});
+        }
+        
+        else { // 'profile' or 0 or 180(?)
+          $('.pattern-text').css('width','100%');
+          
+          $(".pattern-wrapper").css({
+            'height': 'auto',
+            'line-height': 'normal'});
+          
+          $(".pattern-diagram").css({
+            'margin-top': '1em',
+            'width': '100%'});
         }
         flowing = false;
       }
