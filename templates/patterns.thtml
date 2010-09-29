@@ -283,7 +283,9 @@
     
     $.jQTouch({
         icon: 'static/icons/escher.png',
-        startupScreen: 'static/startup/escher.png'
+        preloadImages: ['static/startup/escher.png'],
+        startupScreen: 'static/startup/escher.png',
+        statusBar: 'black'
     });
   </script>
 </head>
@@ -313,7 +315,7 @@
     </div>
     
     <h1>Gang of Four Design Patterns</h1>
-    <ul>
+    <ul class="rounded">
       <li class="arrow"><a class="browse-patterns-link" href="#browse-panel">Browse Patterns</a></li>
       <li class="arrow"><a class="random-pattern-link" href="#">Surprise Me!</a></li>
     </ul>
