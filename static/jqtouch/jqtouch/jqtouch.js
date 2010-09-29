@@ -64,7 +64,6 @@
                 fadeSelector: '.fade',
                 fixedViewport: true,
                 flipSelector: '.flip',
-                forgetSelector: '.forget, .nohistory',
                 formSelector: 'form',
                 fullScreen: true,
                 fullScreenClass: 'fullscreen',
