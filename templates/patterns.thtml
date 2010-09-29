@@ -264,7 +264,7 @@
        * dimensions ourselves (and later take them away).
        */
       $(".panel").addClass('block');
-      scale_images();
+//      scale_images();
       flow_patterns();
       $('.panel').removeClass('block');
       
@@ -342,7 +342,7 @@
         </div>
       </div>
       <div class="pattern-diagram">
-        <img class="diagram" src="diagrams/svg/{{ pattern.stem }}.svg" />
+        <img class="diagram" src="diagrams/png120/{{ pattern.stem }}.png" />
       </div>
     </div>
   </div>
