@@ -22,6 +22,10 @@
       font-size: 10px;
     }
     
+    .pattern-name {
+      display: none;
+    }
+    
     .pattern-category:before {
       content: "Type: ";
       font-weight: bold;
