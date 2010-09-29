@@ -1,6 +1,6 @@
 PATTERNS_DB = gof.db
 PATTERNS_SCRIPT = gof.sql
-APP_HTML = gof_patterns.html
+APP_HTML = index.html
 APP_TEMPLATE = templates/patterns.thtml
 APP_GENERATOR = generate_app.py
 APP_DEPENDENCIES = \
