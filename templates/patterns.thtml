@@ -81,6 +81,13 @@
   </style>
   
   <script>
+    var jQT = new $.jQTouch({
+      icon: 'static/icons/escher.png',
+      preloadImages: ['static/startup/escher.png'],
+      startupScreen: 'static/startup/escher.png',
+      statusBar: 'black'
+    });
+    
     function scale_images() {
       /* 
        * The images start out with a 7.5px height font.  That's too small.
@@ -88,7 +95,7 @@
        */
       scale_factor = 1.33;
       
-      $(".diagram").each(function(index, diagram) {
+      $(".svg-image").each(function(index, diagram) {
         w = $(diagram).width()
         $(diagram).width(w*scale_factor);
         
@@ -100,7 +107,7 @@
     function flow_patterns() {
       if (!flowing) { // ...some primitive synchronization
         flowing = true;
-        orientation = $.jQTouch().getOrientation()
+        orientation = jQT.getOrientation()
         
         if (orientation == 'profile') {
           $('.pattern-text').css('width','100%');
@@ -264,7 +271,7 @@
        * dimensions ourselves (and later take them away).
        */
       $(".panel").addClass('block');
-//      scale_images();
+      scale_images(); // only for the svg images
       flow_patterns();
       $('.panel').removeClass('block');
       
@@ -279,13 +286,6 @@
         flow_patterns();
         $('.panel').removeClass('block');
       });
-    });
-    
-    $.jQTouch({
-        icon: 'static/icons/escher.png',
-        preloadImages: ['static/startup/escher.png'],
-        startupScreen: 'static/startup/escher.png',
-        statusBar: 'black'
     });
   </script>
 </head>
@@ -342,7 +342,7 @@
         </div>
       </div>
       <div class="pattern-diagram">
-        <img class="diagram" src="diagrams/png120/{{ pattern.stem }}.png" />
+        <img class="diagram png120-image" src="diagrams/png120/{{ pattern.stem }}.png" />
       </div>
     </div>
   </div>
