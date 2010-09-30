@@ -400,7 +400,7 @@
                     location.hash = '#' + curid;
                 } else if (location.hash != '#' + curid) {
                     try {
-                        goBack(location.hash)
+                        goTo(location.hash)
                     } catch(e) {
                         console.error('Unknown hash change.');
                     }
