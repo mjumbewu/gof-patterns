@@ -298,14 +298,6 @@
     $(document).ready(function() {
       hook_up_random_pattern_links();
       hook_up_randomize_order_links();
-      
-      if (jQT.isOnline()) {
-        try {
-          jQT.checkForUpdates();
-        catch (INVALID_STATE_ERR) {
-          ; // nothing to update
-        }
-      }
     });
     
     $(window).load(function(evt) {
