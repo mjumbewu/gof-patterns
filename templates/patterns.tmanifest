@@ -16,26 +16,6 @@ static/jqtouch/jqtouch/jqtouch.js
 static/jqtouch/jqtouch/jqtouch.min.css
 static/jqtouch/jqtouch/jqtouch.css
 
-static/jqtouch/themes/apple/img/whiteButton.png
-static/jqtouch/themes/apple/img/on_off.png
-static/jqtouch/themes/apple/img/listGroup.png
-static/jqtouch/themes/apple/img/loading.gif
-static/jqtouch/themes/apple/img/blueButton.png
-static/jqtouch/themes/apple/img/thumb.png
-static/jqtouch/themes/apple/img/listArrowSel.png
-static/jqtouch/themes/apple/img/toggleOn.png
-static/jqtouch/themes/apple/img/grayButton.png
-static/jqtouch/themes/apple/img/selection.png
-static/jqtouch/themes/apple/img/cancel.png
-static/jqtouch/themes/apple/img/chevron.png
-static/jqtouch/themes/apple/img/pinstripes.png
-static/jqtouch/themes/apple/img/toggle.png
-static/jqtouch/themes/apple/img/toolbar.png
-static/jqtouch/themes/apple/img/backButton.png
-static/jqtouch/themes/apple/img/toolButton.png
-static/jqtouch/themes/apple/theme.css
-static/jqtouch/themes/apple/theme.min.css
-
 static/jqtouch/themes/jqt/img/whiteButton.png
 static/jqtouch/themes/jqt/img/on_off.png
 static/jqtouch/themes/jqt/img/back_button_clicked.png
