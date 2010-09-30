@@ -2,6 +2,8 @@ CACHE MANIFEST
 
 http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js
 
+index.html
+
 static/jqtouch/extensions/jqt.offline.js
 static/jqtouch/extensions/jqt.autotitles.js
 static/jqtouch/extensions/jqt.location.js
