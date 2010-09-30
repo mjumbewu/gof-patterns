@@ -366,8 +366,8 @@
     </ul>
     
     <div class="info">Content from <a
-       href="http://www.mcdonaldland.info/2007/11/28/40/">Jason McDonald</a> and
-       <a href="http://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional/dp/0201633612/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1196286871&sr=8-1">The Gang of Four</a>.</div>
+       href="http://www.mcdonaldland.info/2007/11/28/40/" target="blank_">Jason McDonald</a> and
+       <a href="http://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional/dp/0201633612/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1196286871&sr=8-1" target="blank_">The Gang of Four</a>.</div>
   </div>
   
   {% for pattern in patterns %}
