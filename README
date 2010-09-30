@@ -1,6 +1,6 @@
 A simple web-based mobile app for flashing through the Gang of Four design
-patterns. To build, simply run 'make'. The gof_patterns.html file, along with
-the jqtouch folder need to be deployed.
+patterns. To build, simply run 'make'. The 'index.html' file, along with
+the 'diagrams' and 'static' folders need to be deployed.
 
 All files in this project are Copyright (C) 2010 Mjumbe Poe, unless otherwise 
 specified.
