@@ -1,6 +1,11 @@
 A simple web-based mobile app for flashing through the Gang of Four design
-patterns. To build, simply run 'make'. The 'index.html' file, along with
-the 'diagrams' and 'static' folders need to be deployed.
+patterns. To build, simply run 'make'. The 'index.html' file, along with the
+'diagrams' and 'static' folders need to be deployed. If your server does not
+automatically serve .manifest files with the text/cache-manifest mime type, you
+will need to upload the .htaccess file as well (assuming you're using Apache;
+otherwise, look up the solution for your web server).  If you're using Apache
+but don't know whether your server serves text/cache-manifest, go ahead and 
+deploy the .htaccess file anyway.
 
 All files in this project are Copyright (C) 2010 Mjumbe Poe, unless otherwise 
 specified.
