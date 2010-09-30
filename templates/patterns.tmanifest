@@ -1,0 +1,38 @@
+CACHE MANIFEST
+
+http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js
+
+static/jqtouch/extensions/jqt.offline.js
+static/jqtouch/extensions/jqt.autotitles.js
+static/jqtouch/extensions/jqt.location.js
+static/jqtouch/extensions/jqt.floaty.js
+
+static/jqtouch/jqtouch/jquery.1.3.2.min.js
+static/jqtouch/jqtouch/jqtouch.transitions.js
+static/jqtouch/jqtouch/jqtouch.min.js
+static/jqtouch/jqtouch/jqtouch.js
+static/jqtouch/jqtouch/jqtouch.min.css
+static/jqtouch/jqtouch/jqtouch.css
+
+static/jqtouch/themes/jqt/img/whiteButton.png
+static/jqtouch/themes/jqt/img/on_off.png
+static/jqtouch/themes/jqt/img/back_button_clicked.png
+static/jqtouch/themes/jqt/img/chevron_circle.png
+static/jqtouch/themes/jqt/img/back_button.png
+static/jqtouch/themes/jqt/img/loading.gif
+static/jqtouch/themes/jqt/img/button_clicked.png
+static/jqtouch/themes/jqt/img/toggleOn.png
+static/jqtouch/themes/jqt/img/grayButton.png
+static/jqtouch/themes/jqt/img/chevron.png
+static/jqtouch/themes/jqt/img/rowhead.png
+static/jqtouch/themes/jqt/img/button.png
+static/jqtouch/themes/jqt/img/toggle.png
+static/jqtouch/themes/jqt/img/toolbar.png
+static/jqtouch/themes/jqt/theme.css
+static/jqtouch/themes/jqt/theme.min.css
+
+static/icons/escher.png
+static/startup/escher.png
+
+{% for pattern in patterns %}diagrams/png120/{{ pattern.stem }}.png
+{% endfor %}
