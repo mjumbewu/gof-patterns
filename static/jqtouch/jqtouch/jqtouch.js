@@ -72,7 +72,7 @@
                 touchSelector: 'a, .touch',
                 popSelector: '.pop',
                 preloadImages: false,
-                slideSelector: 'body > * > ul li a',
+                slideSelector: 'body > * > ul li a, .slide',
                 slideupSelector: '.slideup',
                 startupScreen: null,
                 statusBar: 'default', // other options: black-translucent, black
