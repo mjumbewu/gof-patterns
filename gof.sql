@@ -59,7 +59,7 @@ INSERT INTO models_pattern (stem, name, category_id, description)
 INSERT INTO models_pattern (stem, name, category_id, description)
   VALUES ('abstract_factory', 'Abstract Factory', 'C', 'Provides an interface for creating families of related or dependent objects without specifying their concrete class.');
 INSERT INTO models_pattern (stem, name, category_id, description)
-  VALUES ('builder', 'Builder', 'C', 'Separate the construction of a complex object from its representing so that the same construction process can create different representations.');
+  VALUES ('builder', 'Builder', 'C', 'Separate the construction of a complex object from its representation so that the same construction process can create different representations.');
 INSERT INTO models_pattern (stem, name, category_id, description)
   VALUES ('factory_method', 'Factory Method', 'C', 'Define an interface for creating an object, but let subclasses decide which class to instantiate. Lets a class defer instantiation to subclasses.');
 INSERT INTO models_pattern (stem, name, category_id, description)
