@@ -30,13 +30,13 @@ if __name__ == "__main__":
   insert_pattern('interpreter', 'Interpreter', 'B', 'Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.');
   insert_pattern('iterator', 'Iterator', 'B', 'Provide a way to access the elements of  an aggregate object sequentially without  exposing its underlying representation.');
   insert_pattern('mediator', 'Mediator', 'B', 'Define an object that encapsulates how a set of objects interact. Promotes loose coupling by keeping objects from referring to each other explicitly and it lets you vary their interactions independently.');
-  insert_pattern('memento', 'Memento', 'B', 'Without violating encapsulation, capture and externalize an object''s internal state so that the object can be restored to this state later.');
+  insert_pattern('memento', 'Memento', 'B', 'Without violating encapsulation, capture and externalize an object\'s internal state so that the object can be restored to this state later.');
   insert_pattern('observer', 'Observer', 'B', 'Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.');
   insert_pattern('state', 'State', 'B', 'Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.');
   insert_pattern('strategy', 'Strategy', 'B', 'Define a family of algorithms, encapsulate each one, and make them interchangeable. Lets the algorithm vary independently from clients that use it.');
-  insert_pattern('template_method', 'Template Method', 'B', 'Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Lets subclasses redefine certain steps of an algorithm without changing the algorithm''s structure.');
+  insert_pattern('template_method', 'Template Method', 'B', 'Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Lets subclasses redefine certain steps of an algorithm without changing the algorithm\'s structure.');
   insert_pattern('visitor', 'Visitor', 'B', 'Represent an operation to be performed on the elements of an object structure. Lets you define a new operation without changing the classes of the elements on which it operates.');
-  insert_pattern('adapter', 'Adapter', 'S', 'Convert the interface of a class into  another interface clients expect. Lets  classes work together that couldn''t  otherwise because of incompatible  interfaces.');
+  insert_pattern('adapter', 'Adapter', 'S', 'Convert the interface of a class into  another interface clients expect. Lets  classes work together that couldn\'t  otherwise because of incompatible  interfaces.');
   insert_pattern('bridge', 'Bridge', 'S', 'Decouple an abstraction from its implementation so that the two can vary independently.');
   insert_pattern('composite', 'Composite', 'S', 'Compose objects into tree structures to  represent part-whole hierarchies. Lets  clients treat individual objects and  compositions of objects uniformly.');
   insert_pattern('decorator', 'Decorator', 'S', 'Attach additional responsibilities to an  object dynamically. Provide a flexible  alternative to sub-classing for extending  functionality.');
